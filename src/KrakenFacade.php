@@ -1,4 +1,4 @@
-<?php namespace Danvuquoc\Kraken;
+<?php namespace Pevawi\Kraken;
 
 use Illuminate\Support\Facades\Facade;
 
