@@ -7,13 +7,13 @@ The best way to install laravel-kraken is with [Composer](<https://getcomposer.o
 
 To install the most recent version, run the following command.
 
-`$ php composer.phar require danvuquoc/laravel-kraken`
+`$ php composer.phar require pevawi/laravel-kraken`
 
 Alternatively, you may edit your composer.son directly by adding the following
 to the require section.
 ```
 "require": {
-    "danvuquoc/laravel-kraken": "1.*",
+    "pevawi/laravel-kraken": "1.*",
 }
 ```
 
@@ -25,7 +25,7 @@ providers array:
 ```
 'providers' => [
     ...
-    Danvuquoc\Kraken\KrakenServiceProvider::class,
+    Pevawi\Kraken\KrakenServiceProvider::class,
     ...
 ]
 ```
@@ -34,14 +34,14 @@ Running the following command will publish `config/kraken.php` to your config
 folder. In this file you will need to insert your api key and api secret.
 
 `$ php artisan vendor:publish
-—provider="Danvuquoc\Kraken\KrakenServiceProvider"`
+—provider="Pevawi\Kraken\KrakenServiceProvider"`
 
 ### Facade
 Register the facade in `config/app.php` by inserting it into the aliases array:
 ```
 'aliases' => [
     ...
-    'KrakenIO' => Danvuquoc\Kraken\KrakenFacade::class,
+    'KrakenIO' => Pevawi\Kraken\KrakenFacade::class,
     ...
 ]
 ```
