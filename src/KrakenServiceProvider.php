@@ -1,7 +1,9 @@
-<?php namespace Pevawi\Kraken;
+<?php
 
-use Illuminate\Support\ServiceProvider;
+namespace Santigarcor\Kraken;
+
 use Kraken;
+use Illuminate\Support\ServiceProvider;
 
 class KrakenServiceProvider extends ServiceProvider
 {
@@ -30,7 +32,7 @@ class KrakenServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('Kraken', function($app) {
+        $this->app->singleton('Kraken', function ($app) {
             return new Kraken($app['config']['kraken']['api_key'], $app['config']['kraken']['api_secret']);
         });
     }

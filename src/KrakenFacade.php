@@ -1,4 +1,6 @@
-<?php namespace Pevawi\Kraken;
+<?php
+
+namespace Santigarcor\Kraken;
 
 use Illuminate\Support\Facades\Facade;
 
