@@ -15,10 +15,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Santigarcor\\KrakenServiceProvider"
+        "Santigarcor\\Kraken\\KrakenServiceProvider"
       ],
       "aliases": {
-        "KrakenIO": "Santigarcor\\KrakenFacade"
+        "KrakenIO": "Santigarcor\\Kraken\\KrakenFacade"
       }
     }
   }
